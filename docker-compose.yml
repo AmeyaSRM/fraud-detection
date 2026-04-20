@@ -1,6 +1,7 @@
 # docker-compose.yml — WINDOWS/WSL2 FIXED VERSION
 # cAdvisor fix: WSL2 does not have /var/lib/docker, /dev/kmsg, or /dev/disk
 # Solution: use named pipe via npipe on Windows Docker Desktop
+version: "3"
 
 services:
   fraud-api:
