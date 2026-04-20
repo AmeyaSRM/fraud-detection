@@ -32,7 +32,7 @@ COPY . .
 # -------------------------
 # 4. TRAIN MODEL (ONLY RUNS IF CODE CHANGES)
 # -------------------------
-RUN mkdir -p models && python train_model.py
+COPY app/models /app/models
 
 # Permissions
 RUN chown -R appuser:appuser /app
