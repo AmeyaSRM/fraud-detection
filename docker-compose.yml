@@ -12,7 +12,7 @@ services:
       - monitoring
     restart: unless-stopped
     volumes:
-      - fraud-data:/app/data
+      - ./data:/app/data
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"]
       interval: 30s

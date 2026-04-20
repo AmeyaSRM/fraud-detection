@@ -22,8 +22,8 @@ RUN pip install --no-cache-dir --timeout 300 --retries 5 -r requirements.txt
 # 2. COPY CREDITCARD DATA (FROM LOCAL)
 # -------------------------
 # ✅ FIXED: Copy from local file instead of downloading
-COPY creditcard.csv /app/data/creditcard.csv
 
+RUN mkdir -p /app/data
 # -------------------------
 # 3. COPY CODE (ONLY THIS CHANGES)
 # -------------------------
