@@ -9,9 +9,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Create data folder
 RUN mkdir -p /app/data
 
-# Copy dataset (IMPORTANT)
-COPY creditcard.csv /app/data/creditcard.csv
-
 # Copy full project
 COPY . .
 
