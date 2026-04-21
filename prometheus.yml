@@ -10,7 +10,7 @@ scrape_configs:
   # Main fraud detection API - matches paper's ML container metrics
   - job_name: 'fraud-api'
     static_configs:
-      - targets: ['fraud-api:5000']
+      - targets: ['http://15.206.220.133:5000']
     metrics_path: '/metrics'
     scrape_timeout: 4s
 
