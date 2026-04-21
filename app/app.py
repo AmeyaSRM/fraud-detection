@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.abspath(os.path.join(BASE_DIR, ".."))
 MODEL_PATH = os.path.join(ROOT_DIR, "models", "fraud_model.pkl")
 SCALER_PATH = os.path.join(ROOT_DIR, "models", "scaler.pkl")
-CSV_PATH = os.getenv("CSV_PATH", "app/data/creditcard.csv")
+CSV_PATH = os.getenv("CSV_PATH", "/app/data/creditcard.csv")
 DB_PATH = os.path.join(ROOT_DIR, "data", "transactions.db")
 
 # ─────────────────────────────────────────
