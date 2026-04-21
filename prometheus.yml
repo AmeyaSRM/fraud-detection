@@ -10,7 +10,7 @@ scrape_configs:
   # Main fraud detection API - matches paper's ML container metrics
   - job_name: 'fraud-api'
     static_configs:
-      - targets: ['http://15.206.220.133:5000']
+      - targets: ['15.206.220.133:5000']
     metrics_path: '/metrics'
     scrape_timeout: 4s
 
@@ -22,5 +22,5 @@ scrape_configs:
   # Docker container metrics via cAdvisor (paper Section 4.4: CPU/memory monitoring)
   - job_name: 'cadvisor'
     static_configs:
-      - targets: ['cadvisor:8080']
+      - targets: ['15.206.220.133:8080']
     scrape_timeout: 4s
