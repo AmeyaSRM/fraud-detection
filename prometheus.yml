@@ -19,8 +19,4 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090']
 
-  # Docker container metrics via cAdvisor (paper Section 4.4: CPU/memory monitoring)
-  - job_name: 'cadvisor'
-    static_configs:
-      - targets: ['15.206.220.133:8080']
-    scrape_timeout: 4s
+
