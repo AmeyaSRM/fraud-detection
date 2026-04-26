@@ -4,7 +4,6 @@
 
 - ML model → Logistic Regression trained on Bank Fraud (creditcard.csv)
 - Monitoring → Prometheus + Grafana 
-- Added cAdvisor for container CPU/memory metrics 
 
 
 ## API Endpoints
